@@ -1,0 +1,32 @@
+.our-speciality {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    padding: 94px 0 0 0;
+    justify-content: center;
+
+&__header {
+  font-weight: 700;
+  color: $notblack;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 1.1428571428571428;
+}
+&__text {
+  line-height: 0.03em;
+  line-height: 1.71;
+  width: 270px;
+}
+&__icon {
+  background-color: $notwhite;
+  height: 120px;
+  width: 270px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}

@@ -1,0 +1,42 @@
+.top-section {
+  background-color: $background;
+  background-image: linear-gradient($background, $background), url(../images/img-work.jpg);
+  color: $white;
+  max-width: 1600px;
+  margin: 0 auto;
+
+&__container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+}
+
+&__header {
+  font-size: 44px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  max-width: 696px;
+}
+
+&__button {
+  background-color: $blue;
+  box-shadow: 0px 4px 4px $btn-shadow;
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Roboto";
+  color: $white;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+}
