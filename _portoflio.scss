@@ -1,0 +1,92 @@
+.portfolio{
+background-color: $white;
+
+&__filter-list {
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+  margin-bottom: 50px;
+  display: flex;
+  }
+&__button {
+  background-color: $notwhite;
+  border-width: 0;
+  height: 38px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  border-radius: 3px;
+  padding: 6px 22px;
+  font-family: "Roboto";
+  transition: 250ms background-color $transition, 250ms color $transition;
+
+  &:focus,
+  &:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $white;
+    background-color: $blue;
+    cursor: pointer;
+}
+}
+&__list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+&__item {
+  width: 370px;
+  background-color: $white;
+  flex-basis: calc((100% - 90px) / 4);
+   border: 1px solid $productborder;
+  transition: 250ms box-shadow $transition;
+  
+  &:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+}
+&__label {
+  position: relative;
+  overflow: hidden;
+}
+&__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  color: $white;
+  padding: 49px 45px 49px 24px;
+  transform: translateY(100%);
+  transition: 250ms transform $transition;
+}
+.portfolio__item:hover .portfolio__text {
+  transform: translateY(0);
+}
+
+&__heading {
+  color: $darkgrey;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 2;
+  margin: 0;
+  padding: 20px 24px 0 24px;
+  border-left: 1px solid $productborder;
+  border-right: 1px solid $productborder;
+}
+&__description {
+  line-height: 1.88;
+  font-size: 16px;
+  margin: 0;
+  padding: 0 24px 20px 24px;
+  border: 1px solid $productborder;
+  border-top: 0;
+}
+}
