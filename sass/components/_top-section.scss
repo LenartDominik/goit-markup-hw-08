@@ -1,26 +1,32 @@
 .top-section {
   background-color: $background;
-  background-image: linear-gradient($background, $background), url(../images/img-work.jpg);
+  background-image: linear-gradient($background, $background),
+   url(../images/img-work.jpg);
   color: $white;
   max-width: 1600px;
+  min-width: 320px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 118px 0;
 
 &__container {
   display: flex;
-  gap: 30px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 200px 0;
+  gap: 30px;
 }
 
 &__header {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   text-align: center;
-  line-height: 1.364;
+  line-height: 1.62;
   letter-spacing: 0.06em;
-  max-width: 696px;
+  text-transform: uppercase;
+
 }
 
 &__button {
@@ -39,4 +45,55 @@
   align-items: center;
   letter-spacing: 0.06em;
 }
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .top-section {
+      background-image: linear-gradient($background, $background), 
+      url(../images/img-work-mobile@2x.jpg);
+    }
+  }
+
+@media screen and (min-width: 480px) {
+  .top-section {
+    background-image: linear-gradient($background, $background),
+     url(../images/img-work-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .top-section {
+      background-image: linear-gradient($background, $background),
+        url(../images/img-work-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .top-section {
+    background-image: linear-gradient($background, $background),
+      url(../images/img-work-desktop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .banner {
+      background-image: linear-gradient($background, $background),
+        url(../images/img-work-desktop@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .top-section {
+    padding: 200px 0;
+
+    &__header {
+      font-size: 44px;
+      line-height: 1.364;
+      max-width: 696px;
+    }
+  }
 }

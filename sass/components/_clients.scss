@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid $iconcolor;
   fill: $iconcolor;
@@ -36,9 +36,32 @@
     margin: 0px 0 50px 0;
 }
 &__list {
+  max-width: 480px;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
+  padding: 0 15px;
+}@media screen and (min-width: 768px) {
+  .clients {
+    &__list {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    &__link {
+      width: 226px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    &__link {
+      width: 170px;
+    }
+  }
 }
 }

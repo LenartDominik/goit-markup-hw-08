@@ -64,6 +64,11 @@
               +48 111 111 111</a>
             </li>
       </ul>
+      <button class="header__button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="16">
+            <use href="./images/icons.svg#icon-close-mobile-menu" ></use>
+          </svg>
+        </button>
       </header>
       <div class="header-line-border"></div>
       <main>
@@ -141,26 +146,24 @@
             <h2 class="working__heading">Czym się zajmujemy</h2>
             <ul class="working__list">
               <li class="working__item">
-                <img src="./images/img1.jpg"
-                  width="370"
-                  height="294"
-                  alt="plan"
-                />
+                <img
+                src="./images/img1.jpg"
+                srcset="./images/img1@2x.jpg 2x"
+                  alt="Ekran laptopa, tablet i dłonie na klawiaturze"
+                  />
                 <p class="working__img-label">Aplikacje komputerowe</p>
               </li>
               <li class="working__item">
                 <img src="./images/img2.jpg"
-                  width="370"
-                  height="294"
-                  alt="design"
+                srcset="./images/img2@2x.jpg 2x"
+                  alt="Kobieta przy laptopie trzymająca telefon w dłoni"
                 />
               <p class="working__img-label">Aplikacje mobilne</p>
               </li>
               <li class="working__item">
                 <img src="./images/img3.jpg"
-                  width="370"
-                  height="294"
-                  alt="style"
+                  srcset="./images/img3@2x.jpg 2x"
+                  alt="Wybór koloru z palety barw na tablecie"
                 />
                 <p class="working__img-label">Rozwiązania graficzne</p>
               </li>
@@ -172,10 +175,10 @@
             <h2 class="team__heading">Nasz zespół</h2>
             <ul class="team__list">
               <li class="team__item">
-                <img src="./images/img-4.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe"
+                <img 
+                src="./images/img-4.jpg"
+                srcset="./images/img-4@2x.jpg 2x"
+                  alt="Zdjęcie Product Designera John Doe"
                 />
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__description">Product Designer</p>
@@ -207,10 +210,10 @@
                   </ul>
               </li>
               <li class="team__item">
-                <img src="./images/img-5.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe"
+                <img 
+                src="./images/img-5.jpg"
+                srcset="./images/img-5@2x.jpg 2x"
+                alt="Zdjęcie Frontend Developera John Doe"
                 />
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__description">Frontend Developer</p>
@@ -242,10 +245,10 @@
                   </ul>
                 </li>
                   <li class="team__item">
-                <img src="./images/img-6.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe"
+                <img 
+                src="./images/img-6.jpg"
+                srcset="./images/img-6@2x.jpg 2x"
+                  alt="Zdjęcie osoby odpowiedzialnej za marketing John Doe"
                 />
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__description">Marketing</p>
@@ -277,10 +280,10 @@
                   </ul>
                   </li>
               <li class="team__item">
-                <img src="./images/img-7.jpg"
-                  width="270"
-                  height="260"
-                  alt="John Doe"
+                <img 
+                src="./images/img-7.jpg"
+                srcser="./images/img-7@2x.jpg 2x"
+                  alt="Zdjęcie UI Designera John Doe"
                 />
                 <h3 class="team__name">John Doe</h3>
                 <p class="team__description">UI Designer</p>
@@ -478,6 +481,76 @@
         </form>
       </div>
     </div>
+
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__button js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-close-1"></use>
+        </svg>
+      </button>
+      <div>
+        <ul class="mobile-menu__menu">
+          <li>
+            <a href="./index.html" class="mobile-menu__link mobile-menu__link--active">Agencja</a>
+          </li>
+          <li><a href="./portfolio.html" class="mobile-menu__link">Portfolio</a></li>
+          <li><a href="#" class="mobile-menu__link">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul class="mobile-menu__contacts">
+          <li>
+            <a href="tel:+48111111111" class="mobile-menu__contact-item">+48 111 111 111</a>
+          </li>
+          <li>
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__contact-item mobile-menu__contact-item--grey"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-menu__social-list">
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile-menu__social-item">
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="mobile-menu__social-link"
+              >LinkedIn</a
+            >
+            </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -10,13 +10,14 @@
 }
 .modal {
     position: relative;
-    width: 528px;
-    height: 581px;
+    width: 100%;
+    height: 609px;
     background-color: $white;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
     border-radius: 4px;
-    margin: auto;
+    margin: 0 auto;
     transition: transform 250ms $transition;
+    // transform: translate(-50%, -50%);
 
     &__button-close {
     position: absolute;
@@ -71,7 +72,7 @@
     }
 
 &__input {
-    width: 448px;
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -105,7 +106,7 @@
     }
 }
 &__input-text {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -133,7 +134,7 @@
 }
 
 &__button-send {
-    width: 200px;
+  width: 200px;
   height: 50px;
   background-color: $blue;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -164,6 +165,7 @@
   height: 15px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: contain;
   background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='15' viewBox='0 0 16 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.2222 1.66667V13.3333H1.77778V1.66667H14.2222ZM14.2222 0H1.77778C0.8 0 0 0.75 0 1.66667V13.3333C0 14.25 0.8 15 1.77778 15H14.2222C15.2 15 16 14.25 16 13.3333V1.66667C16 0.75 15.2 0 14.2222 0Z' fill='%23212121'/%3E%3C/svg%3E%0A");
   cursor: pointer;
 
@@ -189,4 +191,44 @@
 }
 .is-hidden .modal {
 transform: scale(0);
+}
+
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    margin: auto;
+    &__heading {
+    line-height: 1.15;
+    }
+
+    &__input-icon {
+      &--position-1 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+      }
+
+      &--position-2 { 
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+      }
+
+      &--position-3 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+      }
+    }
+  }
 }
