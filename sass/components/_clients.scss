@@ -1,15 +1,19 @@
 .clients {
+
+&__item {
+  flex-basis: calc((100% - 30px) / 2);
+  height: 92px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+}
 
 &__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 210px;
-  height: 92px;
+  height: 100%;
+  width: 100%;
   border: 1px solid $iconcolor;
   fill: $iconcolor;
   border-radius: 4px;
@@ -25,7 +29,6 @@
    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -35,15 +38,15 @@
     margin: 0px 0 50px 0;
 }
 &__list {
-  // max-width: 480px;
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  padding: 0 15px;
+    align-items: center;
+    flex-direction: row;
+  // padding: 0 15px;
 }
+
 @media screen and (min-width: 768px) {
   .clients {
     &__list {
@@ -51,17 +54,16 @@
       margin: 0;
     }
 
-    &__link {
-      width: 226px;
-      // flex-basis: calc((100% - 60px)/3);
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
     }
   }
 }
 
 @media screen and (min-width: 1200px) {
   .clients {
-    &__link {
-      width: 170px;
+    &__item {
+      flex-basis: calc((100% - 150px) / 6);
     }
   }
 }
