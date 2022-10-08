@@ -47,7 +47,7 @@
     flex-wrap: wrap;
 
   &__lorem {
-    flex-basis: calc((50% - 30px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   &__header {
@@ -60,11 +60,10 @@
   }
 
   &__icon {
-    width: 354px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     border-radius: 4px;
     margin-bottom: 30px;
     height: 120px;
@@ -96,7 +95,6 @@
   }
   &__icon {
     width: 270px;
-    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;

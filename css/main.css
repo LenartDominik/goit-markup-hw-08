@@ -921,8 +921,8 @@ body {
         flex-wrap: wrap;
   }
   .our-speciality__lorem {
-    -ms-flex-preferred-size: calc((50% - 30px) / 2);
-        flex-basis: calc((50% - 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
   .our-speciality__header {
     font-weight: 700;
@@ -932,7 +932,7 @@ body {
     line-height: 1.71;
   }
   .our-speciality__icon {
-    width: 354px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -942,10 +942,6 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     border-radius: 4px;
     margin-bottom: 30px;
     height: 120px;
@@ -984,7 +980,6 @@ body {
   }
   .our-speciality__icon {
     width: 270px;
-    height: 120px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
