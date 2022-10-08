@@ -4,7 +4,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-    // padding: 60px 15px 60px 15px;
+    padding: 60px 15px 60px 15px;
 
 &__lorem {
   width: 100%;
@@ -40,7 +40,7 @@
   .our-speciality {
 
   &__lorem {
-    flex-basis: calc((100% - 30px) / 2);
+    flex-basis: calc((50% - 30px) / 2);
   }
 
   &__header {
@@ -73,7 +73,6 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 30px;
     // padding: 94px 0 0 0;
     justify-content: center;
 

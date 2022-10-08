@@ -9,7 +9,6 @@
 
 img {
   display: block;
-  height: auto;
   padding: 0;
   margin: 0;
 }
@@ -37,6 +36,7 @@ body {
 
 .section {
   padding: 60px 15px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
@@ -827,8 +827,8 @@ body {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
     margin: auto;
+    padding-bottom: 40px;
   }
   .modal__heading {
     line-height: 1.15;
@@ -867,17 +867,13 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 30px;
   padding: 60px 15px 60px 15px;
 }
 .our-speciality__lorem {
   width: 100%;
-  -ms-flex-preferred-size: calc((100% - 0px) / 1);
-      flex-basis: calc((100% - 0px) / 1);
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 .our-speciality__header {
   font-weight: 700;
@@ -912,20 +908,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .our-speciality {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
   .our-speciality__lorem {
     -ms-flex-preferred-size: calc((50% - 30px) / 2);
         flex-basis: calc((50% - 30px) / 2);
@@ -975,13 +957,11 @@ body {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    gap: 30px;
-    padding: 94px 0 0 0;
     justify-content: center;
   }
   .our-speciality__lorem {
-    -ms-flex-preferred-size: calc((100% - 30px) / 2);
-        flex-basis: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
   .our-speciality__header {
     font-weight: 700;
