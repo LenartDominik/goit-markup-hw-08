@@ -13,7 +13,7 @@ body {
   max-width: 1200px;
 }
 .section {
-  padding: 60px 15px;
+  padding: 60px 15px 60px 15px;
   margin: 0 auto;
 }
 
@@ -25,6 +25,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .container {
+    margin: 0 auto;
     width: 1200px;
   }
 }

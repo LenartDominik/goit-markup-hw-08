@@ -10,7 +10,6 @@
 img {
   display: block;
   width: 100%;
-  height: auto;
   padding: 0;
   margin: 0;
 }
@@ -37,12 +36,13 @@ body {
 }
 
 .section {
-  padding: 60px 15px;
+  padding: 60px 15px 60px 15px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 1200px) {
   .container {
+    margin: 0 auto;
     width: 1200px;
   }
 }
@@ -907,7 +907,17 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }

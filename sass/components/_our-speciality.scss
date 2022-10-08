@@ -39,8 +39,12 @@
 @media screen and (min-width: 768px) {
   .our-speciality {
     display: flex;
+    align-items: center;
+    flex-direction: row;
     gap: 30px;
+    justify-content: center;
     flex-wrap: wrap;
+
   &__lorem {
     flex-basis: calc((50% - 30px) / 2);
   }
@@ -75,7 +79,6 @@
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    // padding: 94px 0 0 0;
     justify-content: center;
 
     &__lorem {
