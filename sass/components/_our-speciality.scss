@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
-    padding: 60px 15px 60px 15px;
-    width: 100%;
+    // padding: 60px 15px 60px 15px;
 
-& > li {
+&__lorem {
   width: 100%;
+  flex-basis: calc((100% - 30px) / 1);
 }
 
 &__header {
@@ -27,7 +28,6 @@
 &__icon {
   background-color: $notwhite;
   height: 120px;
-  width: 100%;
   border-radius: 4px;
   margin-bottom: 30px;
   flex-direction: row;
@@ -44,8 +44,8 @@
     align-items: center;
     flex-direction: row;
 
-  & > li {
-    flex-basis: calc((100% - 120px) /4);
+  &__lorem {
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   &__header {
@@ -77,10 +77,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: nowrap;
+    // flex-wrap: nowrap;
     gap: 30px;
-    padding: 94px 0 0 0;
+    // padding: 94px 0 0 0;
     justify-content: center;
+
+    &__lorem {
+      flex-basis: calc((100% - 90px) / 4);
+    }
 
     &__header {
       font-weight: 700;
