@@ -30,8 +30,8 @@ body {
 .container {
   width: 100%;
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 1200px;
+  min-width: 290px;
+  max-width: 1600px;
 }
 
 .section {
@@ -879,6 +879,7 @@ body {
 }
 .our-speciality__text {
   line-height: 1.71;
+  text-align: center;
 }
 .our-speciality__icon {
   background-color: #f5f4fa;
@@ -930,9 +931,9 @@ body {
   }
   .our-speciality__text {
     line-height: 1.71;
+    text-align: left;
   }
   .our-speciality__icon {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -977,6 +978,7 @@ body {
   }
   .our-speciality__text {
     line-height: 1.71;
+    text-align: left;
   }
   .our-speciality__icon {
     width: 270px;
@@ -1195,7 +1197,6 @@ body {
             align-items: center;
   }
   .team__item {
-    width: 100%;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }

@@ -23,6 +23,7 @@
 
 &__text {
   line-height: 1.71;
+  text-align: center;
 }
 &__icon {
   background-color: $notwhite;
@@ -57,10 +58,11 @@
 
   &__text {
     line-height: 1.71;
+    text-align: left;
   }
 
   &__icon {
-    width: 100%;
+    // width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,6 +94,7 @@
 
   &__text {
     line-height: 1.71;
+    text-align: left;
   }
   &__icon {
     width: 270px;
