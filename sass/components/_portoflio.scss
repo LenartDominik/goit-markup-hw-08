@@ -2,13 +2,12 @@
 background-color: $white;
 
 &__filter-list {
-  justify-content: flex-start;
+  justify-content: center;
   gap: 8px;
   flex-wrap: wrap;
   list-style: none;
-  margin-bottom: 50px;
   display: flex;
-  padding: 0 15px;
+  // padding: 0 15px;
   margin-bottom: 40px;
   }
 &__button {
@@ -40,9 +39,9 @@ background-color: $white;
   // padding: 0 15px;
 }
 &__item {
-  max-width: 450px;
+  // max-width: 450px;
   background-color: $white;
-  flex-basis: calc((100% - 90px) / 3);
+  flex-basis: 100%;
   border: 1px solid $productborder;
   transition: 250ms box-shadow $transition;
   
@@ -60,11 +59,14 @@ background-color: $white;
   display: flex;
 }
 
+&__picture {
+  width: 100%;
+}
 &__text {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
+  width: 100%;
   background: rgba(33, 150, 243, 0.9);
   font-size: 18px;
   line-height: 1.56;
@@ -116,7 +118,9 @@ background-color: $white;
   }
 
   &__item {
-    max-width: 354px;
+    // max-width: 354px;
+        flex-basis: calc((100% - 30px) / 2);
+
   }
 
   &__text {
@@ -157,7 +161,8 @@ background-color: $white;
   }
 
  &__item {
-    max-width: 370px;
+    // max-width: 370px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 
  &__text {
